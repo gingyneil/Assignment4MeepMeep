@@ -30,7 +30,7 @@ module scenes {
             
             // Add Menu Label
             this._menuLabel = new objects.Label(
-                "MENU SCENE", "60px","Consolas", "#000000",
+                "Meep Meep", "60px","Consolas", "#000000",
                 320, 240, true
                 );
             this.addChild(this._menuLabel);

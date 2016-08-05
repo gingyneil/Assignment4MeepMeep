@@ -26,7 +26,7 @@ var scenes;
             this._roadCoy.y = 50;
             this.addChild(this._roadCoy);
             // Add Menu Label
-            this._menuLabel = new objects.Label("MENU SCENE", "60px", "Consolas", "#000000", 320, 240, true);
+            this._menuLabel = new objects.Label("Meep Meep", "60px", "Consolas", "#000000", 320, 240, true);
             this.addChild(this._menuLabel);
             // add the start button
             this._startButton = new objects.Button("startButton", 220, 420, true);

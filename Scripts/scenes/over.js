@@ -29,6 +29,11 @@ var scenes;
             this.addChild(this._restartButton);
             this._finalScoreLabel = new objects.Label("SCORE: " + core.score, "60px", "Consolas", "#000000", 320, 240, true);
             this.addChild(this._finalScoreLabel);
+            if (core.score > core.highScore) {
+                core.highScore = core.score;
+            }
+            this._highScoreLabel = new objects.Label("HIGH SCORE: " + core.highScore, "60px", "Consolas", "#000000", 320, 50, true);
+            this.addChild(this._highScoreLabel);
             // Start button event listener
             this._restartButton.on("click", this._restartButtonClick, this);
             // add this scene to the global scene container

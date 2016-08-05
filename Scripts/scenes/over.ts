@@ -5,6 +5,7 @@ module scenes {
         private _gameOverLabel: objects.Label;
         private _restartButton: objects.Button;
         private _finalScoreLabel: objects.Label;
+        private _highScoreLabel: objects.Label;
 
         /**
          * Creates an instance of Menu.
@@ -40,8 +41,12 @@ module scenes {
 
             this._finalScoreLabel = new objects.Label("SCORE: " + core.score, "60px", "Consolas", "#000000", 320, 240, true);
             this.addChild(this._finalScoreLabel);
-                
             
+            if (core.score > core.highScore){
+                core.highScore = core.score;
+            }
+            this._highScoreLabel = new objects.Label("HIGH SCORE: " + core.highScore, "60px", "Consolas", "#000000", 320, 50,true);
+            this.addChild(this._highScoreLabel);
 
             // Start button event listener
             this._restartButton.on("click", this._restartButtonClick, this);

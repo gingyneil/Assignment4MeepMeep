@@ -64,7 +64,8 @@ var core;
         createjs.Ticker.framerate = 60;
         createjs.Ticker.on("tick", gameLoop); // create an event listener for the tick event
         // setup the default scene
-        core.scene = config.Scene.OVER;
+        console.log("hi i am here");
+        core.scene = config.Scene.MENU;
         changeScene();
     }
     /**

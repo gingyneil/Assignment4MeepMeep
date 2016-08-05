@@ -54,7 +54,7 @@ module objects {
             this._position = newPosition;
         }
 
-        get isColliding:boolean{
+        get isColliding():boolean{
             return this._isColliding;
         }
 

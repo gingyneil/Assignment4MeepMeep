@@ -88,7 +88,7 @@ namespace core {
         createjs.Ticker.on("tick", gameLoop); // create an event listener for the tick event
 
         // setup the default scene
-        scene = config.Scene.OVER;
+        scene = config.Scene.MENU;
         changeScene();
     }
 
